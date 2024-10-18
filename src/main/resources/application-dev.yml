@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jbdc:h2:mem:bnkapi
+    url: jdbc:h2:mem:bnkapi
     username: bnkapi
     password:
   jpa:

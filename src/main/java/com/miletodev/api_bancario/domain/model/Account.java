@@ -17,10 +17,10 @@ public class Account {
     private String agency;
 
     @Column(precision = 13,scale = 2)
-    private Double balance;
+    private BigDecimal balance;
 
-    @Column(name = "additional_limit",precision = 13,scale = 2)
-    private BigDecimal limit;
+    @Column(precision = 13,scale = 2)
+    private BigDecimal addtionalLimit;
 
     public Long getId() {
         return id;
@@ -46,19 +46,19 @@ public class Account {
         this.agency = agency;
     }
 
-    public Double getBalance() {
+    public BigDecimal getBalance() {
         return balance;
     }
 
-    public void setBalance(Double balance) {
+    public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
 
-    public BigDecimal getLimit() {
-        return limit;
+    public BigDecimal getAddtionalLimit() {
+        return addtionalLimit;
     }
 
-    public void setLimit(BigDecimal limit) {
-        this.limit = limit;
+    public void setAddtionalLimit(BigDecimal addtionalLimit) {
+        this.addtionalLimit = addtionalLimit;
     }
 }
