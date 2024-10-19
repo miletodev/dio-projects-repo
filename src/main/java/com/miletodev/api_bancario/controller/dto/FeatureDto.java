@@ -9,7 +9,7 @@ public record FeatureDto(Long id, String icon, String description) {
 
     public Feature toModel() {
         Feature model = new Feature();
-        model.setId(this.id):
+        model.setId(this.id);
         model.setIcon(this.icon);
         model.setDescription(this.description);
         return model;

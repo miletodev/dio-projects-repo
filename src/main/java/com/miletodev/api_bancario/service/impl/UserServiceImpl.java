@@ -22,13 +22,13 @@ public class UserServiceImpl implements UserService {
         this.userRepository = userRepository;
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public List<User> findAll() {
         return userRepository.findAll();
     }
 
-    @Transactional(readOnly = true)
-    public User findById(Long id) {
+    @Transactional
+    public User findById(Long id) throws ChangeSetPersister.NotFoundException {
         return userRepository.findById(id).orElseThrow(ChangeSetPersister.NotFoundException::new);
     }
 
@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Transactional
-    public User update(Long id, User userToUpdate) {
+    public User update(Long id, User userToUpdate) throws ChangeSetPersister.NotFoundException {
         this.validateChangeableId(id, "updated");
         User dbUser = this.findById(id);
         if (!dbUser.getId().equals(userToUpdate.getId())) {
@@ -66,7 +66,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Transactional
-    public void delete(Long id) {
+    public void delete(Long id) throws ChangeSetPersister.NotFoundException {
         this.validateChangeableId(id, "deleted");
         User dbUser = this.findById(id);
         this.userRepository.delete(dbUser);
