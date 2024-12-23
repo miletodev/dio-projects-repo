@@ -1,0 +1,18 @@
+[submodule "projetos/DesafioControleFluxo"]
+	path = projetos/DesafioControleFluxo
+	url = /home/almeida-mileto/Downloads/dio-projects/projetos/DesafioControleFluxo
+[submodule "projetos/desafio-dio-POO"]
+	path = projetos/desafio-dio-POO
+	url = /home/almeida-mileto/Downloads/dio-projects/projetos/desafio-dio-POO
+[submodule "projetos/dio-api"]
+	path = projetos/dio-api
+	url = /home/almeida-mileto/Downloads/dio-projects/projetos/dio-api
+[submodule "projetos/dio-projeto-academia"]
+	path = projetos/dio-projeto-academia
+	url = /home/almeida-mileto/Downloads/dio-projects/projetos/dio-projeto-academia
+[submodule "projetos/dio-trilha-java"]
+	path = projetos/dio-trilha-java
+	url = /home/almeida-mileto/Downloads/dio-projects/projetos/dio-trilha-java
+[submodule "projetos/library-catalog"]
+	path = projetos/library-catalog
+	url = /home/almeida-mileto/Downloads/dio-projects/projetos/library-catalog
